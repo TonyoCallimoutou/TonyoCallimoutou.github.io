@@ -1,0 +1,77 @@
+[
+  {
+    "id": 0,
+    "title": "Projects.project_0.title",
+    "description": "Projects.project_0.description",
+    "image": "0.png",
+    "stacks": [
+      "Angular"
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Projects.project_1.title",
+    "description": "Projects.project_1.description",
+    "image": "1.png",
+    "stacks": [
+      "Java",
+      "Android Studio"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Projects.project_2.title",
+    "description": "Projects.project_2.description",
+    "image": "2.png",
+    "stacks": [
+      "Java",
+      "Android Studio"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Projects.project_3.title",
+    "description": "Projects.project_3.description",
+    "image": "3.png",
+    "stacks": [
+      "Java",
+      "Android Studio"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Projects.project_4.title",
+    "description": "Projects.project_4.description",
+    "image": "4.png",
+    "stacks": [
+      "Java",
+      "Android Studio"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Projects.project_5.title",
+    "description": "Projects.project_5.description",
+    "image": "5.png",
+    "stacks": [
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Projects.project_6.title",
+    "description": "Projects.project_6.description",
+    "image": "6.png",
+    "stacks": [
+      "GraphQL"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Projects.project_7.title",
+    "description": "Projects.project_7.description",
+    "image": "7.png",
+    "stacks": [
+      "Golang"
+    ]
+  }
+]
