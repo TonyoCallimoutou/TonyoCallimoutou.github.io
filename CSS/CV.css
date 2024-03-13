@@ -1,0 +1,481 @@
+/* General */
+
+body, html { /* prend la page a 100% et fond blanc */
+
+    height: 100%;
+    background-color: #323232;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: arial, sans-serif;
+}
+
+em {
+    text-decoration: underline;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex; 
+    background-image: linear-gradient(to bottom, #0b486b 80%,#323232); 
+    justify-content: center; 
+}
+
+
+#image_profil img { /* taille de la photo de profil */
+
+    max-width: 100%; 
+    height: auto; 
+}
+
+#profil_texte {
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    color: white; /* texte en blanc */
+    width: 90%; /* prend 90% de l'espace et laisse 10% a l'image */
+}
+
+header h1 {
+    
+    display: flex;
+    justify-content: center;
+}
+
+#Title { /* index*/
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #0b486b, #323232,#0b486b 50%);
+}
+
+#Title2 { /* portfolio*/
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #0b486b 50%, #323232,#0b486b);
+}
+
+
+header a { /* Liens */
+
+    text-decoration: none;
+}
+
+
+
+/* Section */
+
+section {
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+    line-height: 150%;
+}
+
+
+article {
+    min-height: 90%;
+    width: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: justify;
+    color: white;
+}
+
+#parcours {
+    text-align: center;
+}
+
+#parcours img {
+    width: 60%;
+}
+
+#activites {
+    height: auto;
+}
+
+table {
+    width: 100%;
+    min-height: 80%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: left;
+}
+
+td {
+    border: 1px white solid;
+    height: 50px;
+}
+
+#vide {
+    height: 80%;
+}
+
+
+
+#liste_activites {
+    list-style: none;
+}
+
+#liste_actvites li {
+    margin-bottom: 5%;
+}
+
+#colonne2 {
+    width: 80%;
+    height: 100%;
+    padding: 5%;
+    overflow-y:auto;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+#tableau {
+    display: flex;
+    width: 100%;
+}
+
+#menu, #texte {
+    border: 1px white solid;
+    padding: 2%;
+}
+
+#texte {
+    width: 80%;
+}
+
+#menu {
+    width: 20%;
+    text-align: left;
+    line-height: 400%;
+}
+
+#menu p {
+    text-align: center;
+}
+
+#hand, #danse {
+    display: none;
+}
+
+
+#danse:target {
+    display: block;
+}
+
+#hand:target {
+    display: block;
+}
+
+#hand:target ~ #formation {
+    display: none;
+}
+
+#danse:target ~ #formation {
+    display: none;
+}
+
+#activites .image {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+.projet , .projet2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.projet p , .projet2 p {
+    width: 40%;
+}
+
+.projet2 {
+    flex-direction: row;
+}
+
+#screenshot {
+    display: flex;
+    overflow-x:auto;
+    list-style: none;
+    width: 50%;
+}
+
+#screenshot img {
+    margin-right: 5%;
+}
+
+article img {
+    width: 30%;
+    height:auto;
+}
+
+#activites, #goLunch {
+    
+    padding-bottom: 5%;
+}
+
+
+article h2 , article h3 { /* Titre de l'article */
+
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+
+#footer {
+    display: flex;
+    margin: 0;
+    position: absolute;
+    min-height: auto;
+    left: 0;
+    right: 0;
+    
+    background-color: #0b486b; 
+    color: white; /* couleur texte */
+    background-image: linear-gradient(to top, #0b486b 80%,#323232); /* Degrader */
+}
+
+#coordonnees, #site_web {
+    
+    margin-left: 5%;
+    width: 50%;
+}
+#coordonnees ul {
+    
+    margin-left: -10%;
+}
+
+#logo_site_web {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#logo_site_web a {
+    
+    display: flex;
+    justify-content: center;
+}
+
+#logo_site_web img { /* Taille de logo */
+
+    max-width: 50%;
+    height: auto;
+    margin-right: 5%;
+    
+}
+
+/* Lien */
+
+header a:link, article:not(#footer) a:link , #coordonnees a:link, #graphiste a:link {
+    color: white;
+}
+
+header a:visited, article:not(#footer) a:visited , #coordonnees a:visited, #graphiste a:visited {
+    color: white;
+}
+
+header ul a:focus, article:not(#footer) ul a:focus, #coordonnees a:focus, #graphiste a:focus {
+    background: grey;
+}
+
+header ul a:hover, article:not(#footer) ul a:hover, #coordonnees a:hover, #graphiste a:hover {
+    background-color: grey;
+}
+
+header ul a:active, article:not(#footer) ul a:active, #coordonnees a:active, #graphiste a:active {
+    background-color: grey;
+}
+
+
+/* Effet de grossissement sur les logo */
+
+#logo_site_web img { /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+#logo_site_web a:hover img { /* L'image est grossie de 25% */
+
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+
+
+/* Interface sur smartphone */
+
+@media all and (max-device-width: 480px) {
+    
+    /* Header */
+    header {
+        display: flex;
+        right: auto;
+        flex-direction: column; /* mettre l'image de profil et le texte sur la meme colonne */
+        align-items: center;
+    }
+    
+    #Title {
+        background-image: linear-gradient(to right, #0b486b, #323232 50%,#0b486b 50%);
+    }
+
+    #Title2 {
+        background-image: linear-gradient(to right, #0b486b 50%, #323232 50%,#0b486b);
+    }
+
+
+    #image_profil img { /* taille de la photo de profil */
+    
+        max-width: 50%; 
+        height: auto; 
+    }
+    
+    #image_profil p {
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #profil_texte {
+    
+        text-align: center;
+        width: 100%;
+    }
+
+    nav a {
+        
+        display: block;
+        text-decoration: none;
+        padding: 5%;
+    }
+
+    #sous { /* rendre les pages invisible pour le moment */
+        
+        display: none;
+        background-color: #0b486b;
+        z-index: 1;
+    }
+    nav div:hover #sous { /* Afficher les pages du menu */
+        
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    #sous li {   
+        
+        text-align: left;
+    }
+
+
+
+    
+    /* Section */
+
+    section {
+        padding-top: 100%;
+    }
+
+    article {
+    
+        margin: 5%;
+        padding: 0%;
+    }
+    article h2 { /* Titre de l'article */
+
+        margin-top: 30%;
+    }
+
+    #tableau {
+        flex-direction: column;
+    }
+    #menu {
+        width: auto;
+    }
+
+    #menu div {
+        padding: 5%;
+    }
+
+    #texte {
+        width: auto;
+        padding: 5%;
+    }
+
+    article img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #parcours img {
+        width: 100%;
+        height: 800px;
+    }
+    
+    .container {
+        display: none;
+    }
+
+    td ul {
+        margin-left: -16px;
+    }
+
+    
+    .projet p , .projet2 p {
+        width: auto;
+    }
+
+    .projet2,  .projet {
+        flex-direction: column;
+    }
+
+    #screenshot {
+        justify-content: flex-start;
+        width: auto;
+        overflow: scroll;
+    }
+
+    #screenshot img {
+        padding: 0%;
+    }
+    
+    #footer {
+        
+        flex-direction: column;
+    }
+    
+    #coordonnees, #site_web {
+        width: auto;
+    }
+
+}
