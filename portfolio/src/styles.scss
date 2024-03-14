@@ -18,3 +18,100 @@ body {
 h1 {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: #797878;
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: .3s ease-out;
+  span{
+    &::before{
+      width: 0.5rem;
+      height: 0.5rem;
+      background: transparent;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-top: 0.25rem solid white;
+      border-left: 0.25rem solid white;
+      transition: .3s;
+      opacity: 0;
+    }
+    &::after{
+      width: 0.5rem;
+      height: 0.5rem;
+      background: transparent;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-right: 0.25rem solid white;
+      border-bottom: 0.25rem solid white;
+      transition: .3s;
+      opacity: 0;
+
+    }
+  }
+  &::before {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 0.25rem solid white;
+    border-top: 0.25rem solid white;
+    transition: .3s;
+    opacity: 0;
+  }
+  &::after {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-left: 0.25rem solid white;
+    border-bottom: 0.25rem solid white;
+    transition: .3s;
+    opacity: 0;
+  }
+  &:hover{
+    color: white;
+    &::before{
+      opacity: 1;
+      right: 0.5rem;
+      top: 0.5rem;
+    }
+    &::after{
+      opacity: 1;
+      left: 0.5rem;
+      bottom: 0.5rem;
+    }
+    span{
+      &::before{
+        opacity: 1;
+        left: 0.5rem;
+        top: 0.5rem;
+      }
+      &::after{
+        opacity: 1;
+        right: 0.5rem;
+        bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+a.active {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}

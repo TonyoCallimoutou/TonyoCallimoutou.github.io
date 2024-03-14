@@ -1,13 +1,9 @@
 <div class="bar">
-  <div class="name">
-    <span>
-      Tonyo Callimoutou
-    </span>
-  </div>
   <div class="links">
     <a
       *ngFor="let route of routes"
-      routerLink="{{route.route}}"
+      [href]="route.route"
+      target="_blank"
       [ngClass]="route.active ? 'active' : ''"
     >
       {{ route.name | translate }}

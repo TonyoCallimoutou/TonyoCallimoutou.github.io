@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {ToolbarComponent} from "./component/toolbar/toolbar.component";
-import {FooterComponent} from "./component/footer/footer.component";
+import {FooterComponent} from "./component/toolbar/footer/footer.component";
 import {HttpClientModule} from "@angular/common/http";
 
 @Component({

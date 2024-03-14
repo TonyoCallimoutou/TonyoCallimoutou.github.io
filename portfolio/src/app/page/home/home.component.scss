@@ -5,6 +5,13 @@
 
   .image {
     flex: 1;
+    height: 70lvh;
+    width: auto;
+    position:relative;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   .details {
