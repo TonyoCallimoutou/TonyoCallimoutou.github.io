@@ -1,5 +1,5 @@
 $line_width: 0.25rem;
-$card_width: 30lvw;
+$card_width: 30rem;
 $card_padding: 1rem;
 $marge_line_card: 5lvw;
 
@@ -48,13 +48,7 @@ $marge_line_card: 5lvw;
 
   .card {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    width: $card_width;
-    padding: $card_padding;
-    border-radius: 0.5rem;
     bottom: 0;
-    background: grey;
     visibility: hidden;
     opacity: 0;
     transition: all .5s ease-in-out;

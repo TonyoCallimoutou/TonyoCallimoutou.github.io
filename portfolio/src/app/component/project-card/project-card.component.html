@@ -1,0 +1,16 @@
+<div class="tile">
+  <img
+    class="background"
+    alt="{{ project().title | translate }}"
+    ngSrc="assets/image/project/{{project().image}}" fill/>
+  <div class="text">
+    <h2 class="animate-text"> {{ project().title | translate }}</h2>
+  </div>
+  <div class="icons animate-text">
+    <img
+      *ngFor="let stack of project().stacks"
+      class="icon"
+      alt="icon {{stack}}"
+      ngSrc="assets/icons/{{stack}}.ico" fill/>
+  </div>
+</div>

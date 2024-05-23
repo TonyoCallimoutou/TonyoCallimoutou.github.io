@@ -10,6 +10,7 @@ import {NgClass, NgForOf} from "@angular/common";
 import {EventItem} from "./event-item";
 import {InfoService} from "../../service/info.service";
 import {take} from "rxjs";
+import {AboutCardComponent} from "../../component/about-card/about-card.component";
 
 @Component({
   selector: 'app-about',
@@ -17,7 +18,8 @@ import {take} from "rxjs";
   imports: [
     TranslateModule,
     NgForOf,
-    NgClass
+    NgClass,
+    AboutCardComponent
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
@@ -40,23 +42,7 @@ export class AboutComponent {
       .subscribe((data: EventItem[]) => {
         this.events = data;
         this.cdr.detectChanges();
-        this.waitForDOM().then(() => {
-          this.callbackFunc();
-        });
-    });
-  }
-
-  waitForDOM(): Promise<void> {
-    return new Promise<void>((resolve) => {
-      if (document.readyState === 'complete') {
-        resolve();
-      } else {
-        document.addEventListener('readystatechange', () => {
-          if (document.readyState === 'complete') {
-            resolve();
-          }
-        });
-      }
+        this.callbackFunc();
     });
   }
 

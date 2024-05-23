@@ -4,6 +4,7 @@ import {Project} from "./project";
 import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {ProjectService} from "../../service/project.service";
 import {from, groupBy, mergeMap, take, toArray} from "rxjs";
+import {ProjectCardComponent} from "../../component/project-card/project-card.component";
 
 @Component({
   selector: 'app-project',
@@ -12,6 +13,7 @@ import {from, groupBy, mergeMap, take, toArray} from "rxjs";
     CommonModule,
     TranslateModule,
     NgOptimizedImage,
+    ProjectCardComponent,
   ],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'

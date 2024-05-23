@@ -1,0 +1,36 @@
+$line_width: 0.25rem;
+$card_width: 30rem;
+$card_padding: 1rem;
+$marge_line_card: 5lvw;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap:  1rem;
+  width: $card_width;
+  padding: $card_padding;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 2rem -1rem black;
+  background: grey;
+
+  .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 30%;
+    height: auto;
+    border-radius: 0.5rem;
+
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="card">
+  <h2>{{ event().title | translate }}</h2>
+  <div class="infos">
+    <img *ngIf="!!event().image" src="assets/image/event/{{event().image}}">
+    <p class="where">{{ event().where | translate }} </p>
+    <p class="time">{{ event().date | translate }} </p>
+  </div>
+  <p>{{ event().description | translate }}</p>
+  <ul>
+    <li *ngFor="let item of event().bulletPoint">
+      <span>{{ item }}</span>
+    </li>
+  </ul>
+</div>

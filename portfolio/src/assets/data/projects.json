@@ -2,7 +2,6 @@
   {
     "id": 0,
     "title": "Projects.project_0.title",
-    "description": "Projects.project_0.description",
     "image": "website.png",
     "category": "Projects.category_1",
     "link": "https://github.com/TonyoCallimoutou/tonyocallimoutou.github.io",
@@ -13,7 +12,6 @@
   {
     "id": 1,
     "title": "Projects.project_1.title",
-    "description": "Projects.project_1.description",
     "image": "mareu.png",
     "category": "Projects.category_3",
     "link": "https://github.com/TonyoCallimoutou/Mareu",
@@ -25,7 +23,6 @@
   {
     "id": 2,
     "title": "Projects.project_2.title",
-    "description": "Projects.project_2.description",
     "image": "todoc.png",
     "category": "Projects.category_3",
     "link": "https://github.com/TonyoCallimoutou/Todoc",
@@ -37,7 +34,6 @@
   {
     "id": 3,
     "title": "Projects.project_3.title",
-    "description": "Projects.project_3.description",
     "image": "go4lunch.png",
     "category": "Projects.category_3",
     "link": "https://github.com/TonyoCallimoutou/Go4Lunch",
@@ -49,7 +45,6 @@
   {
     "id": 4,
     "title": "Projects.project_4.title",
-    "description": "Projects.project_4.description",
     "image": "real_estate.png",
     "category": "Projects.category_3",
     "link": "https://github.com/TonyoCallimoutou/RealEstateManager",
@@ -61,7 +56,6 @@
   {
     "id": 5,
     "title": "Projects.project_5.title",
-    "description": "Projects.project_5.description",
     "image": "devops.png",
     "category": "Projects.category_2",
     "link": "https://github.com/TonyoCallimoutou/Project_Devops",
@@ -71,8 +65,7 @@
   {
     "id": 6,
     "title": "Projects.project_6.title",
-    "description": "Projects.project_6.description",
-    "image": "6.png",
+    "image": "graphql.png",
     "category": "Projects.category_2",
     "link": "https://github.com/TonyoCallimoutou/GraphQL_MyEfrei",
     "stacks": [
@@ -82,8 +75,7 @@
   {
     "id": 7,
     "title": "Projects.project_7.title",
-    "description": "Projects.project_7.description",
-    "image": "7.png",
+    "image": "go.png",
     "category": "Projects.category_2",
     "link": "https://github.com/TonyoCallimoutou/EFREI_Go_project",
     "stacks": [
@@ -93,7 +85,6 @@
   {
     "id": 8,
     "title": "Projects.project_8.title",
-    "description": "Projects.project_8.description",
     "image": "treasure_map.png",
     "category": "Projects.category_1",
     "link": "https://github.com/TonyoCallimoutou/treasure_map",
@@ -104,7 +95,6 @@
   {
     "id": 9,
     "title": "Projects.project_9.title",
-    "description": "Projects.project_9.description",
     "image": "secret.png",
     "category": "Projects.category_0",
     "link": "",
