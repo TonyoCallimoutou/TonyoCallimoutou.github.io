@@ -2,23 +2,54 @@
   {
     "category": "experience",
     "title": "About.Experience_0.title",
+    "image": "sopra.png",
     "date": "About.Experience_0.date",
     "where": "About.Experience_0.where",
-    "description": "About.Experience_0.description"
+    "description": "About.Experience_0.description",
+    "bulletPoint": [
+      "Angular",
+      "Java (Spring Boot)",
+      "PostgreSQL",
+      "Agile (Scrum/SAFe)",
+      "Jenkins",
+      "Jmeter"
+    ]
   },
   {
     "category": "degree",
     "title": "About.Degree_0.title",
+    "image": "efrei.png",
     "date": "About.Degree_0.date",
     "where": "About.Degree_0.where",
-    "description": "About.Degree_0.description"
+    "description": "About.Degree_0.description",
+    "bulletPoint": [
+      "Agile - Scrum",
+      "Angular",
+      "Flutter",
+      "GraphQL",
+      "Firebase",
+      "Python - AI",
+      "Devops - Docker",
+      "GO - Golang",
+      "Rust"
+    ]
   },
   {
     "category": "degree",
     "title": "About.Degree_1.title",
+    "image": "openclassroom.png",
     "date": "About.Degree_1.date",
     "where": "About.Degree_1.where",
-    "description": "About.Degree_1.description"
+    "description": "About.Degree_1.description",
+    "bulletPoint": [
+      "Git",
+      "Java",
+      "Kotlin",
+      "MySQL",
+      "Firebase",
+      "UML",
+      "Android Studio"
+    ]
   },
   {
     "category": "experience",
