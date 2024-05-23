@@ -11,6 +11,8 @@
     "info": "Après avoir entrepris une reconversion professionnelle dans le domaine du développement informatique, j'ai suivi une formation de deux ans à l'EFREI en alternance. Cette expérience m'a permis d'acquérir des compétences solides et de gagner en assurance. En tant qu'alternant, j'ai eu l'opportunité de démontrer mes compétences en développement tout en manifestant une volonté constante d'apprendre et de me surpasser.\n"
   },
   "About": {
+    "exp": "Expérience",
+    "degree": "Diplome",
     "Degree_0": {
       "title": "Mastère Dev Manager Full Stack",
       "date": "09/2022 - 09/2024",
@@ -37,9 +39,9 @@
     },
     "Experience_0": {
       "title": "Développeur full stack - Alternance (en cours)",
-      "date": "05/09/2022 - 05/09/2024",
+      "date": "09/2022 - 09/2024",
       "where": "Sopra Steria, Paris",
-      "description": "Développement d'une application web de gestion de projets en équipe"
+      "description": "Développement d'une application web"
     },
     "Experience_1": {
       "title": "Assistant Géomètre - CDI (Rupture Conventionel)",
@@ -60,6 +62,10 @@
       "title": "Mon site web personnel",
       "description": "Ce site web que vous visiter actuellement est un projet personnel. Il a été réalisé en Angular et est hébergé sur Github directement."
     },
+    "category_0": "Projet Entreprise",
+    "category_1": "Projets Personnels",
+    "category_2": "Projets EFREI",
+    "category_3": "Projets OpenClassroom",
     "project_1": {
       "title": "Mareu",
       "description": "Mise en situation :\nUne entreprise en pleine croissance a de plus en plus de mal à gérer son planning pour les salles de réunion. Chaque réunion est planifiée en plaçant un post-it sur la porte de la salle en question.\n\nNotre rôle :\nCréer une application permettant de gérer les différentes réunions.\nAjouter ou supprimer une réunion.\nFiltrer les réunions, par salle ou par date.\nFaire en sorte que l'application puisse être affichée sur tous types d'écran, en portrait ou en paysage."
@@ -69,7 +75,7 @@
       "description": "Mise en situation :\nUne agence de nettoyage de locaux commerciaux a fait réaliser une application de gestion de tâches pour faciliter le travail de ses collaborateurs. Cependant, son prestataire a mis la clé sous la porte avant d’avoir pu réaliser la persistance des données sur l'application\n\nNotre rôle:\nFinir le travail de l'ancien prestataire en ajoutant une base de données à l'application existante.\nRéaliser un MPD (Model Physique de Données), réaliser un diagramme d'utilisation et de classe.\nCréer un fichier APK signé de l'application."
     },
     "project_3": {
-      "title": "Todoc",
+      "title": "Go4Lunch",
       "description": "Mise en situation :\nAu sein d'une entreprise, Go4Lunch sera une application utilisée par les employés. Elle permettra de rechercher un restaurant dans les environs, puis de sélectionner celui de son choix et en faire part à ses collègues.\n\nLes différentes Fonctionnalité:\nSystème d'authentification par Facebook ou Google (Firebase).\nMenu latéral, avec les informations de l'utilisateur.\nCarte des restaurants aux alentours.\nListe des restaurants avec leurs informations.\nListe des collègues avec le choix de leurs restaurants.\nFiche détaillée d'un restaurant.\nSystème de like d'un restaurant.\nFonctionnalité de recherche.\nSystème de notification.\nApplication disponible en Anglais et Français.\nSystème de chat pour dialoguer avec les collègues."
     },
     "project_4": {
@@ -86,6 +92,14 @@
     },
     "project_7": {
       "title": "EFREI_Go_project",
+      "description": "lorem ipsum"
+    },
+    "project_8": {
+      "title": "treasure_map",
+      "description": "lorem ipsum"
+    },
+    "project_9": {
+      "title": "PARCOURS",
       "description": "lorem ipsum"
     }
   }
