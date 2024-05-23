@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import {TranslateModule} from "@ngx-translate/core";
 import {NgClass, NgForOf} from "@angular/common";
-import {EventItem} from "./event";
+import {EventItem} from "./event-item";
 import {InfoService} from "../../service/info.service";
 import {take} from "rxjs";
 

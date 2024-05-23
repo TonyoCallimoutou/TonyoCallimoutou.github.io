@@ -1,29 +1,23 @@
 import { Component } from '@angular/core';
 import {TranslateModule} from "@ngx-translate/core";
 import {Project} from "./project";
-import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
-import {Router} from "@angular/router";
-import {ProjectDetailComponent} from "./project-detail/project-detail.component";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {ProjectService} from "../../service/project.service";
-import {take} from "rxjs";
+import {from, groupBy, mergeMap, take, toArray} from "rxjs";
 
 @Component({
   selector: 'app-project',
   standalone: true,
   imports: [
+    CommonModule,
     TranslateModule,
-    NgForOf,
     NgOptimizedImage,
-    NgIf,
-    ProjectDetailComponent
   ],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-  projects: Project[] = [];
-
-  detailProject: Project | null = null;
+  projects: Project[][] = [];
 
   constructor(private service: ProjectService) {
     this.getProject();
@@ -31,18 +25,21 @@ export class ProjectComponent {
 
   getProject() {
     this.service.getData()
-      .pipe(take(1))
-      .subscribe((data: Project[]) => {
-        this.projects = data;
+      .pipe(
+        take(1),
+        mergeMap(projects => from(projects).pipe(
+          groupBy(project => project.category),
+          mergeMap(group => group.pipe(toArray())),
+          toArray()
+        ))
+      )
+      .subscribe((groupedProjects: Project[][]) => {
+        this.projects = groupedProjects;
       });
   }
 
   onClick(project: Project) {
-    this.detailProject = project;
-  }
-
-  onGoBack() {
-    this.detailProject = null;
+    window.open(project.link, "_blank");
   }
 
 

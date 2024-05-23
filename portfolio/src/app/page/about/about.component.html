@@ -1,12 +1,17 @@
 <div class="page">
-  <h1> {{'Links.about' | translate }}</h1>
+<!--  <h1> {{'Links.about' | translate }}</h1>-->
+
+  <div class="title">
+    <h1> {{'About.exp' | translate }}</h1>
+    <h1> {{'About.degree' | translate }}</h1>
+  </div>
 
   <div class="timeline">
     <ul>
-      <li *ngFor="let event of events" [ngClass]="event.category">
-        <div>
-          <h1>{{ event.title | translate }}</h1>
-          <p>{{ event.date | translate }} </p>
+      <li *ngFor="let event of events" >
+        <div class="card" [ngClass]="event.category">
+          <h2>{{ event.title | translate }}</h2>
+          <p class="time">{{ event.date | translate }} </p>
           <p>{{ event.description | translate }}</p>
         </div>
       </li>
