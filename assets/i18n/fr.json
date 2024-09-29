@@ -79,23 +79,23 @@
       "description": "Mise en situation :\nAu sein d'une entreprise, Go4Lunch sera une application utilisée par les employés. Elle permettra de rechercher un restaurant dans les environs, puis de sélectionner celui de son choix et en faire part à ses collègues.\n\nLes différentes Fonctionnalité:\nSystème d'authentification par Facebook ou Google (Firebase).\nMenu latéral, avec les informations de l'utilisateur.\nCarte des restaurants aux alentours.\nListe des restaurants avec leurs informations.\nListe des collègues avec le choix de leurs restaurants.\nFiche détaillée d'un restaurant.\nSystème de like d'un restaurant.\nFonctionnalité de recherche.\nSystème de notification.\nApplication disponible en Anglais et Français.\nSystème de chat pour dialoguer avec les collègues."
     },
     "project_4": {
-      "title": "RealEstateManager",
+      "title": "Real_Estate",
       "description": "lorem ipsum"
     },
     "project_5": {
-      "title": "Project_Devops_code",
+      "title": "DevOps",
       "description": "lorem ipsum"
     },
     "project_6": {
-      "title": "GraphQL_MyEfrei",
+      "title": "GraphQL",
       "description": "lorem ipsum"
     },
     "project_7": {
-      "title": "EFREI_Go_project",
+      "title": "GO",
       "description": "lorem ipsum"
     },
     "project_8": {
-      "title": "treasure_map",
+      "title": "Treasure_map",
       "description": "lorem ipsum"
     },
     "project_9": {
