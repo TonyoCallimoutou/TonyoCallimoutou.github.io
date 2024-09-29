@@ -1,23 +1,29 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {Route} from "./route";
-import {NgClass, NgForOf} from "@angular/common";
+import {CommonModule} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";
 import {NavigationEnd, Router, RouterLink} from "@angular/router";
 import {filter} from "rxjs";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-toolbar',
   standalone: true,
   imports: [
-    NgForOf,
+    CommonModule,
     TranslateModule,
     RouterLink,
-    NgClass
+    FormsModule,
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss'
 })
 export class ToolbarComponent implements OnInit {
+
+  isMenuToggled : boolean = false;
+
+  isScreenSmall: boolean = false;
+
   routes : Route[] = [
     {
       name: 'Links.home',
@@ -55,6 +61,22 @@ export class ToolbarComponent implements OnInit {
           }
         });
       }
+    });
+
+
+    this.checkScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  checkScreenSize() {
+    this.isScreenSmall = window.innerWidth < 850; // Ajustez la valeur selon vos besoins
+  }
+
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
   }
 

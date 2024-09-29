@@ -1,1 +1,16 @@
+.bar {
+  bottom: 0;
+}
 
+@media screen and (max-width: 800px){
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar {
+    height: auto;
+    margin: 0;
+  }
+
+}

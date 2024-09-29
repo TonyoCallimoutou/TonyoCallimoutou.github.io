@@ -1,0 +1,19 @@
+<form [formGroup]="form" class="filter">
+  <h1> Filter</h1>
+  <div class="form">
+    <app-select
+      [listOptions]="listOptionsCategory"
+      [formControlSelect]="formControlCategory"
+    ></app-select>
+
+    <app-radio-bouton
+      [formControlRadio]="formControlIsOr"
+    ></app-radio-bouton>
+
+    <app-select
+      [listOptions]="listOptionsStack"
+      [formControlSelect]="formControlStack"
+    ></app-select>
+  </div>
+
+</form>

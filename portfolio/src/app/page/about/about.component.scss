@@ -1,5 +1,5 @@
 $line_width: 0.25rem;
-$card_width: 30rem;
+$card_width: 30lvw;
 $card_padding: 1rem;
 $marge_line_card: 5lvw;
 
@@ -75,12 +75,19 @@ $marge_line_card: 5lvw;
   }
 
   @media screen and (max-width: 900px) {
+    $card_width: 60lvw;
     .card {
-      width: 250px;
+      width: $card_width;
     }
     .experience {
-      left: -289px;
-      /*250+45-6*/
+      left: calc(-1 * $card_width / 2);
+    }
+    .degree  {
+      left: calc(-1 * $card_width / 2);
+    }
+
+    ul li::after {
+      visibility: hidden;
     }
   }
 }

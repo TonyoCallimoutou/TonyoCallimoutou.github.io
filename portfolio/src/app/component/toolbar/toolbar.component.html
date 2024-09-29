@@ -4,11 +4,34 @@
       Tonyo Callimoutou
     </span>
   </div>
-  <div class="links">
+  <div class="links" *ngIf="!isScreenSmall">
     <a
       *ngFor="let route of routes"
       routerLink="{{route.route}}"
       [ngClass]="route.active ? 'active' : ''"
+      (click)="scrollToTop()"
+    >
+      {{ route.name | translate }}
+    </a>
+  </div>
+
+  <div
+    class="menu" *ngIf="isScreenSmall"
+     (click)="scrollToTop()">
+
+    <input id="menu-toggle" type="checkbox" [(ngModel)]="isMenuToggled" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+
+  </div>
+</div>
+
+<div class="sub-menu" *ngIf="isMenuToggled">
+  <div class="list" *ngFor="let route of routes" (click)="isMenuToggled = false">
+    <a
+      routerLink="{{route.route}}"
+      (click)="scrollToTop()"
     >
       {{ route.name | translate }}
     </a>

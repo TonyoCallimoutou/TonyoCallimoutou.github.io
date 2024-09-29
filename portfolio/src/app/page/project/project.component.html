@@ -1,7 +1,13 @@
 <div class="page">
 
-  <div *ngFor="let category of projects" class="category">
-    <h1 class="title"> {{ category[0].category | translate }}</h1>
+  <app-filter
+    *ngIf="false"
+    (filterAnd)="onFilterWithANDCondition($event)"
+    (filterOr)="onFilterWithOrCondition($event)"
+  ></app-filter>
+
+  <div *ngFor="let category of projetsFiltered" class="category">
+    <h1 class="title" *ngIf="category.length > 0"> {{ category[0].category | translate }}</h1>
     <div class="wrap">
       <app-project-card
         *ngFor="let project of category"

@@ -1,19 +1,25 @@
-.wrap {
-  display:flex;
-  flex-direction: row;
-  gap: 3rem;
-  flex-wrap: wrap;
-  padding: 4rem;
-}
-
-.title {
-  position:absolute;
+.page {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-self: center;
-  opacity:1;
-  transform: translateX(0);
-  transition-delay: 0.2s;
-  transition: all 0.6s ease-in-out;
+  gap: 1rem;
+
+  .wrap {
+    display:flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 4rem;
+  }
+
+  .title {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    opacity:1;
+    transform: translateX(0);
+    transition-delay: 0.2s;
+    transition: all 0.6s ease-in-out;
+  }
 }

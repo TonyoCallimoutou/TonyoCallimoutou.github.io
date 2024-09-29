@@ -6,21 +6,41 @@ body {
 }
 
 .bar {
+  position: sticky;
   height: 5lvh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  left: 0;
+  right: 0;
+  background: #222222;
+  z-index: 1000;
+  border-bottom: solid 0.1rem #797878;
+  border-top: solid 0.1rem #797878;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0 3rem;
 }
-.page {
-  min-height: 90lvh;
+
+@media screen and (max-width: 800px){
+
+  .bar {
+    margin: 0;
+  }
+
 }
 
 h1,h2,h3 {
   margin: 0;
 }
 
-span, p, a {
+span, p, a, select {
   font-size: 1.2em;
+}
+
+.page {
+  min-height: 90lvh;
+  margin: 0 3rem;
 }
 
 a {

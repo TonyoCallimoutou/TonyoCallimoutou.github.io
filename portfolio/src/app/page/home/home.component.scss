@@ -20,3 +20,15 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 800px){
+  .page {
+    flex-direction: column;
+
+    .image {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+}

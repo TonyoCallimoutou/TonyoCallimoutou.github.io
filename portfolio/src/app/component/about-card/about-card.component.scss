@@ -1,5 +1,5 @@
 $line_width: 0.25rem;
-$card_width: 30rem;
+$card_width: 30lvw;
 $card_padding: 1rem;
 $marge_line_card: 5lvw;
 
@@ -11,7 +11,7 @@ $marge_line_card: 5lvw;
   padding: $card_padding;
   border-radius: 0.5rem;
   box-shadow: 0 2rem 2rem -1rem black;
-  background: grey;
+  background: #3C3C3C;
 
   .infos {
     display: flex;
@@ -34,3 +34,13 @@ $marge_line_card: 5lvw;
     margin: 0;
   }
 }
+
+@media screen and (max-width: 800px){
+  $card_width: 60lvw;
+  .card {
+    width: $card_width;
+  }
+
+}
+
+
